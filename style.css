@@ -11,7 +11,7 @@ body {
 h1 {
     font-size: 1.4em;
     text-align: center;
-    margin: 0;
+    margin: 0 0 1em 0;
     padding-bottom: .2em;
     font-weight: 700;
 }
@@ -29,18 +29,34 @@ h1 {
     box-shadow: -3px 1px 21px -2px rgba(0,0,0,0.75);
 }
 
+.input_container {
+    padding-bottom: .75em;
+    margin-bottom: .75em;
+    /* border: 1px solid blue; */
+    position: relative;
+}
+
+
+
 lable, input, button {
     display: block;
     width: 100%;
 }
 
 lable {
-    margin-bottom: .3em;
+    margin-bottom: .6em;
 }
 
 input {
     padding: .75em .5em;
     border: 1px solid rgba(220,220,220,.8);
+    margin-bottom: .4em;
+}
+
+input:focus {
+    outline: none;
+    padding: .78em .6em;
+    border: 2px solid rgba(220,220,220);
 }
 
 input::placeholder , button {
@@ -49,12 +65,29 @@ input::placeholder , button {
     font-size: 1.05em;
 }
 
-.input_container {
-    padding: .5em;
+.input_container.success input {
+    border: 2px solid greenyellow;
+}
+
+.input_container.error input {
+    border: 2px solid #e74c3c;
+}
+
+small {
+    color: #e74c3c;
+    /* border: 1px solid yellow; */
+    position: absolute;
+    bottom: -0.2em;
+    left: 0;
+    visibility: hidden;
+}
+
+.input_container.error small{
+    visibility: visible;
 }
 
 button {
-    margin-top: .3em;
+    margin-top: 2em;
     padding: .75em .5em;
     background: #346beb;
     color: white;
