@@ -32,11 +32,8 @@ h1 {
 .input_container {
     padding-bottom: .75em;
     margin-bottom: .75em;
-    /* border: 1px solid blue; */
     position: relative;
 }
-
-
 
 lable, input, button {
     display: block;
@@ -75,7 +72,6 @@ input::placeholder , button {
 
 small {
     color: #e74c3c;
-    /* border: 1px solid yellow; */
     position: absolute;
     bottom: -0.2em;
     left: 0;
@@ -84,6 +80,11 @@ small {
 
 .input_container.error small{
     visibility: visible;
+}
+
+.input_container.success small{
+    visibility: visible;
+    color: greenyellow;
 }
 
 button {
