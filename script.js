@@ -29,32 +29,34 @@ function checkEmail(input) {
 
 form.addEventListener('submit', (e)=> {
     e.preventDefault()
-    if(username.value === ""){
-        usernameErrFunc(username, "Username is Required")
-    }else{
-        userInputSuccFunc(username, 'Details Accepted')
-    }
-
-    if(email.value === ""){
-        usernameErrFunc(email, "Email is Required")}
-    else if (!checkEmail(email.value)) {
-        usernameErrFunc(email, "Invalied Email")
-    } 
-    else{
-        userInputSuccFunc(email, 'Details Accepted')
-    }
-
-    if(password.value === ""){
-        usernameErrFunc(password, "Password is Required")
-    }else{
-        userInputSuccFunc(password, 'Details Accepted')
-    }
-
-    if(confirm.value === ""){
-        usernameErrFunc(confirm, "Password is Required")
-    }else{
-        userInputSuccFunc(confirm, 'Details Accepted')
-    }
 
 
 })
+
+// if(username.value === ""){
+//     usernameErrFunc(username, "Username is Required")
+// }else{
+//     userInputSuccFunc(username, 'Details Accepted')
+// }
+
+// if(email.value === ""){
+//     usernameErrFunc(email, "Email is Required")}
+// else if (!checkEmail(email.value)) {
+//     usernameErrFunc(email, "Invalied Email")
+// } 
+// else{
+//     userInputSuccFunc(email, 'Details Accepted')
+// }
+
+// if(password.value === ""){
+//     usernameErrFunc(password, "Password is Required")
+// }else{
+//     userInputSuccFunc(password, 'Details Accepted')
+// }
+
+// if(confirm.value === ""){
+//     usernameErrFunc(confirm, "Password is Required")
+// }else{
+//     userInputSuccFunc(confirm, 'Details Accepted')
+// }
+
